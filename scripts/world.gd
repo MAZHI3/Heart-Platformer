@@ -1,6 +1,7 @@
 extends Node2D
 @onready var collision_polygon_2d = $StaticBody2D/CollisionPolygon2D
 @onready var polygon_2d = $StaticBody2D/CollisionPolygon2D/Polygon2D
+@onready var level_completed = $CanvasLayer/LevelCompleted
 
 
 
@@ -8,8 +9,8 @@ extends Node2D
 func _ready():
 	RenderingServer.set_default_clear_color(Color.BLACK)
 	polygon_2d.polygon = collision_polygon_2d.polygon 
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+	Events.level_completed.connect(show_level_completed)
+	
+func show_level_completed():
+	level_completed.show()
+	get_tree().paused = true
