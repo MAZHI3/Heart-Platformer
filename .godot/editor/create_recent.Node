@@ -1,5 +1,6 @@
-CanvasLayer
 Node
+TileMap
+CanvasLayer
 Label
 ColorRect
 CenterContainer
