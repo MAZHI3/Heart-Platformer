@@ -1,8 +1,9 @@
+CanvasLayer
+ColorRect
+AnimationPlayer
 Node
 TileMap
-CanvasLayer
 Label
-ColorRect
 CenterContainer
 CollisionShape2D
 Sprite2D
