@@ -4,3 +4,4 @@ res://scenes/level_one.tscn
 res://scenes/level_transition.tscn
 res://scripts/level_transition.gd
 res://scenes/player.tscn
+res://scripts/player.gd
