@@ -5,3 +5,5 @@ res://scenes/level_transition.tscn
 res://scripts/level_transition.gd
 res://scenes/player.tscn
 res://scripts/player.gd
+res://scenes/start_menu.tscn
+res://scripts/start_menu.gd
